@@ -1,0 +1,195 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    background-image: url("háttér.jpg")
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%
+}
+
+h1 {
+	font-size:220%;
+}
+
+h2, h3{
+	font-size:120%;
+}	
+
+* {
+    box-sizing: border-box;
+}
+
+.topnav a {
+    text-decoration: none;
+    margin-right: 10px;
+    border:1px solid #0a0000;
+    padding:10px;
+    background-color: #bee0b0;
+}
+
+.topnav a.active-link {
+    background-color: #016623;
+    color: white;
+}
+
+input[type=text], input[type=tel], input[type=email], select, textarea, fieldset {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 28px;
+    resize: vertical;
+}
+
+input[type=checkbox]{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+label[for=partner] {
+    margin-right: 30px;
+}
+
+input[type=submit]
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 15px;
+}
+
+td, th {
+    border: 1px solid  #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #a3a0a0;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(200, 214, 158);
+}
+
+tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+}
+
+#fa-mellett {
+    width:800px;
+    height:600px;
+}
+
+#szembol{
+    width:950px;
+    height:600px;
+}
+
+#egy-agon{
+    width:800px;
+    height:600px;
+}
+
+#pihenes-kozben{
+    width:900px;
+    height:600px;
+}
+
+#terkep{
+    width:1200px;
+    height:540px;
+}
+
+#uzenet{
+    height:200px;
+}
+
+
+@media print {
+	
+    @page {
+		margin: 2cm;
+	 }
+	
+	html {
+	
+		background:white;
+		}
+	body  {
+		width:100%;
+		font-family:'Times New Roman', Times, serif; 
+		background:white;
+		min-width:initial;
+		max-width:initial;
+		box-shadow:initial;
+	}
+
+	.topnav {display:none}	/* ne jelenjen meg a nav elem */
+
+	a:after { content: " (" attr(href) ")";}  /* a linkek ut�n jelenjen meg a href param�ter �rt�ke*/		
+    
+    h2 {
+        display: none;
+    }
+
+    iframe, ins {
+        display: none;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        line-height: 0pt !important;
+        white-space: nowrap;
+    }
+
+    table, pre { page-break-inside:avoid }
+
+}
+
+

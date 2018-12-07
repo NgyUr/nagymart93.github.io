@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="SajátCSS.css">
+    <title>A vörös panda</title>
+</head>
+
+<body>
+    <h1>Űrlap</h1>
+
+    <h2>Menü</h2>
+    <div class="topnav">
+        <a href="index.html">Kezdőlap</a>
+        <a  href="Avöröspanda.html">A vörös panda</a>
+        <a href="Elterjedése.html">Elterjedése</a>
+        <a class="active-link" href="Űrlap.html">Űrlap</a>
+    </div>
+
+    <h2>Küldjön nekünk e-mail-t: </h2>
+
+   
+    <div class="container">
+         <form action="mailto:nagymart93@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Név:</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="mail">E-mail:</label><br>
+            <input type="email" name="mail" id="mail"><br>
+            <label for="comment">Komment:</label><br>
+            <input type="text" name="comment" id="comment" size="50"><br><br>
+            <input type="submit" value="Küldés">
+            <input type="reset" value="Alaphelyzet">
+        </form>
+    </div>
+
+    <h3>Lépjen velünk kapcsolatba</h3>
+
+    <div class="container">
+        <form action="Űrlap.html">
+            <label for="vnev">Az Ön vezetékneve:</label><br>
+            <input type="text" id="vnev" name="vnev">
+            <label for="knev">Az Ön keresztneve:</label><br>
+            <input type="text" id="knev" name="knev">
+            <label for="uzenet">Üzenet:</label><br>
+            <textarea id="uzenet" name="uzenet"></textarea>
+            <fieldset>
+                <input type="radio" id="partner" name="usertype" value="partner"><label for="partner">Partner</label>
+                <input type="radio" id="kliens" name="usertype" value="kliens"><label for="kliens">Kliens</label>
+            </fieldset>
+            <label for="telszam">Az Ön telefonszáma:</label><br>
+            <input type="tel" id="telszam" name="telszam">
+            <label for="visszahivas">Szeretnék visszahívást</label>
+            <input type="checkbox" id="visszahivas" name="visszahivas"><br>
+            <input type="submit" value="Küldés">
+            <input type="reset" value="Alaphelyzet">
+        </form>
+    </div>
+
+
+</body>
+</html>
